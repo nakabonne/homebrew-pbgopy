@@ -2,24 +2,24 @@
 class Pbgopy < Formula
   desc "Copy and paste between devices"
   homepage "https://github.com/nakabonne/pbgopy"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.0/pbgopy_0.1.0_darwin_amd64.tar.gz"
-    sha256 "c42afc060caaaaa502980d665a9e71413bb7ddb3869de602d3042dc5cde95b09"
+    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.1/pbgopy_0.1.1_darwin_amd64.tar.gz"
+    sha256 "4d5b74aec169bce5da699ddf4f3e9578f1b9bcad160162cc67e488b03dbd878d"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.0/pbgopy_0.1.0_linux_amd64.tar.gz"
-    sha256 "ce9aa8f30bd717049a43ea2cff54601de9404d56d296c58cd5e691df777cad51"
+    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.1/pbgopy_0.1.1_linux_amd64.tar.gz"
+    sha256 "b920d4291d0aff322e4353801006efcd4327da42789ba1030f5f5ecbbe793c48"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.0/pbgopy_0.1.0_linux_armv6.tar.gz"
-    sha256 "efc3a8c6dc5ee8ef87f3174565e63ee469f70ea65a2bd1f1d12c4a08278ff83f"
+    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.1/pbgopy_0.1.1_linux_armv6.tar.gz"
+    sha256 "319dfc4aec7b74d6bb76c02e3461496ceb675a7aa32f143e0cb671f7dcb47d40"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.0/pbgopy_0.1.0_linux_arm64.tar.gz"
-    sha256 "40fc398a3aabe5d768ab68764d19ab096222febd99e19595be3bb3dafe864c7a"
+    url "https://github.com/nakabonne/pbgopy/releases/download/v0.1.1/pbgopy_0.1.1_linux_arm64.tar.gz"
+    sha256 "e3fbcb61818f1402be29aa84558bab6b0d3107c76a5bd32a9984ccb77a0d8cd9"
   end
 
   def install
